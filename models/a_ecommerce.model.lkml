@@ -10,8 +10,6 @@ datagroup: a_ecommerce_default_datagroup {
 
 persist_with: a_ecommerce_default_datagroup
 
-explore: connection_reg_r3 {}
-
 explore: events {
   join: users {
     type: left_outer
@@ -19,14 +17,6 @@ explore: events {
     relationship: many_to_one
   }
 }
-
-explore: fatal_error_user_derived_base {}
-
-explore: flights {}
-
-explore: imgsrc1onerroralert2 {}
-
-explore: incremental_pdts_test {}
 
 explore: inventory_items {
   join: products {
@@ -72,26 +62,6 @@ explore: orders {
 
 explore: products {}
 
-explore: saralooker {
-  join: users {
-    type: left_outer
-    sql_on: ${saralooker.user_id} = ${users.id} ;;
-    relationship: many_to_one
-  }
-}
-
-explore: schema_migrations {}
-
-explore: sindhu {
-  join: users {
-    type: left_outer
-    sql_on: ${sindhu.user_id} = ${users.id} ;;
-    relationship: many_to_one
-  }
-}
-
-explore: test {}
-
 explore: user_data {
   join: users {
     type: left_outer
@@ -101,39 +71,3 @@ explore: user_data {
 }
 
 explore: users {}
-
-explore: vvimgsrc1onerroralert2ll {}
-
-explore: xin_test_for_bug2 {}
-
-explore: xss_test {}
-
-explore: xss_test_1 {}
-
-explore: xss_test_10 {}
-
-explore: xss_test_11 {}
-
-explore: xss_test_12 {}
-
-explore: xss_test_13 {}
-
-explore: xss_test_14 {}
-
-explore: xss_test_15 {}
-
-explore: xss_test_16 {}
-
-explore: xss_test_2 {}
-
-explore: xss_test_4 {}
-
-explore: xss_test_5 {}
-
-explore: xss_test_6 {}
-
-explore: xss_test_7 {}
-
-explore: xss_test_8 {}
-
-explore: xss_test_9 {}
