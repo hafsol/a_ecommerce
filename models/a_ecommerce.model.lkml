@@ -11,6 +11,7 @@ datagroup: a_ecommerce_default_datagroup {
 persist_with: a_ecommerce_default_datagroup
 
 explore: events {
+  hidden: yes
   join: users {
     type: left_outer
     sql_on: ${events.user_id} = ${users.id} ;;
@@ -19,6 +20,7 @@ explore: events {
 }
 
 explore: inventory_items {
+  hidden: yes
   join: products {
     type: left_outer
     sql_on: ${inventory_items.product_id} = ${products.id} ;;
@@ -63,6 +65,7 @@ explore: orders {
 explore: products {}
 
 explore: user_data {
+  hidden: yes
   join: users {
     type: left_outer
     sql_on: ${user_data.user_id} = ${users.id} ;;
