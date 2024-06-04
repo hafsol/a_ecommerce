@@ -7,8 +7,8 @@
   #filters:
 
   elements:
-  - name: add_a_unique_name_1717538288
-    title: Untitled Visualization
+  - name: users_by_zip
+    title: Users by zip
     model: a_ecommerce
     explore: users
     type: looker_google_map
