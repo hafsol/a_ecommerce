@@ -2,7 +2,7 @@ connection: "ecommerce_demo"
 
 # include all the views
 include: "/views/**/*.view"
-include: "/brand.dashboard"
+include: "/**/*.dashboard"
 
 datagroup: a_ecommerce_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
